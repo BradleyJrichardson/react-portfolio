@@ -53,7 +53,14 @@ h4 {
   font-size: 2rem;
   padding-top: 10px;
 }
-
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
 .dark {
   color: #dadada;
   min-height: 100%;
@@ -75,12 +82,18 @@ h4 {
   margin-top: 15px;
 }
 
+.projects-header {
+  padding-bottom: 40px;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: auto;
 }
 .card {
   width: 330px;
+  padding: 40px;
 }
 
 .card-dark:hover {
@@ -90,8 +103,8 @@ h4 {
 }
 
 .card-light:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  /* background: rgba(28, 32, 34, 0.9); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .wrapper {
@@ -114,6 +127,37 @@ h4 {
   padding-right: 20px;
 }
 
+.project-link-container {
+  padding-top: 10px;
+}
+
+.project-link {
+  padding-right: 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.project-about {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-text {
+  font-size: 11px;
+  font-family: "Nunito", sans-serif;
+}
+
+.float-right {
+  float: right;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.center-text {
+  text-align: center;
+}
 @media only screen and (max-width: 580px) {
   :root {
     font-size: 6px;

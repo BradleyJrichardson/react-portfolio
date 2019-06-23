@@ -247,10 +247,12 @@ class Index extends React.Component {
           className={`particles-${this.state.theme}`}
           params={this.state.particle}
         />
+        <Nav />
         <div className={`wrapper ${this.state.theme}`}>
           <Landing />
-          <Projects />
-          <Nav />
+          <div className="card-container">
+            <Projects />
+          </div>
         </div>
       </ThemeProvider>
     );

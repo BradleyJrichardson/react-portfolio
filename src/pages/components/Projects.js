@@ -1,21 +1,21 @@
-import React from "react"
-import ProjectCards from "./ProjectCards"
-import Nasa from "../../images/nasa.png"
-import ISS from "../../images/ISS.png"
-import portfolio1 from "../../images/portfolio-1.png"
-import portfolio2 from "../../images/portfolio-2.png"
-import portfolio3 from "../../images/portfolio-3.png"
-import spaceX from "../../images/spaceX.png"
-import teach2learn from "../../images/teach2learn.png"
-import tictactoe from "../../images/tictactoe.png"
-import spaceClient from "../../images/space-client.png"
-import battle from "../../images/battle.png"
-import Rotate from "react-reveal/Rotate"
+import React from "react";
+import ProjectCards from "./ProjectCards";
+import Nasa from "../../images/nasa.png";
+import ISS from "../../images/ISS.png";
+import portfolio1 from "../../images/portfolio-1.png";
+import portfolio2 from "../../images/portfolio-2.png";
+import portfolio3 from "../../images/portfolio-3.png";
+import spaceX from "../../images/spaceX.png";
+import teach2learn from "../../images/teach2learn.png";
+import tictactoe from "../../images/tictactoe.png";
+import spaceClient from "../../images/space-client.png";
+import battle from "../../images/battle.png";
+import Rotate from "react-reveal/Rotate";
 
 export default function Projects() {
   return (
     <React.Fragment>
-      <h2>What I've Been Working on</h2>
+      <h2 className="projects-header">What I've Been Working on</h2>
       <Rotate bottom right>
         <ProjectCards
           title="Nasa POD Portal"
@@ -26,7 +26,7 @@ export default function Projects() {
           img={Nasa}
           githublink="https://github.com/BradleyJrichardson/nasa-API-client"
           livelink="https://distracted-goodall-8fb3e0.netlify.com/"
-        ></ProjectCards>
+        />
       </Rotate>
 
       <Rotate bottom left>
@@ -39,7 +39,7 @@ export default function Projects() {
           img={spaceClient}
           githublink="https://github.com/BradleyJrichardson/react-hubble-api"
           livelink="#"
-        ></ProjectCards>
+        />
       </Rotate>
 
       <Rotate bottom right>
@@ -52,7 +52,7 @@ export default function Projects() {
           img={ISS}
           githublink="https://github.com/BradleyJrichardson/spaceX-API-client"
           livelink="https://objective-darwin-0b23b4.netlify.com/"
-        ></ProjectCards>
+        />
       </Rotate>
       <Rotate bottom left>
         <ProjectCards
@@ -64,7 +64,7 @@ export default function Projects() {
           img={spaceX}
           githublink="https://github.com/BradleyJrichardson/spaceX-API-client"
           livelink="https://serene-golick-f43236.netlify.com/"
-        ></ProjectCards>
+        />
       </Rotate>
       <Rotate bottom right>
         <ProjectCards
@@ -76,7 +76,7 @@ export default function Projects() {
           img={battle}
           githublink="https://github.com/BradleyJrichardson/github-battle"
           livelink="https://pedantic-agnesi-274c5f.netlify.com/"
-        ></ProjectCards>
+        />
       </Rotate>
       <Rotate bottom left>
         <ProjectCards
@@ -89,7 +89,7 @@ export default function Projects() {
           img={teach2learn}
           githublink=""
           livelink=""
-        ></ProjectCards>
+        />
       </Rotate>
       <Rotate bottom right>
         <ProjectCards
@@ -101,7 +101,7 @@ export default function Projects() {
           img={tictactoe}
           githublink="https://github.com/BradleyJrichardson/tic-tac-toe"
           livelink="https://condescending-sinoussi-c7ba57.netlify.com/"
-        ></ProjectCards>
+        />
       </Rotate>
       <Rotate bottom left>
         <ProjectCards
@@ -113,7 +113,7 @@ export default function Projects() {
           img={portfolio1}
           githublink="https://github.com/BradleyJrichardson/First-Website"
           livelink="https://bradleyjrichardson.github.io/First-Website/"
-        ></ProjectCards>
+        />
       </Rotate>
       <Rotate bottom right>
         <ProjectCards
@@ -125,7 +125,7 @@ export default function Projects() {
           img={portfolio2}
           githublink="https://github.com/BradleyJrichardson/BradleyJrichardson.github.io"
           livelink="https://bradleyjrichardson.github.io/"
-        ></ProjectCards>
+        />
       </Rotate>
       <Rotate bottom left>
         <ProjectCards
@@ -137,7 +137,7 @@ export default function Projects() {
           img={portfolio3}
           githublink="https://github.com/BradleyJrichardson/portfolio-3"
           livelink="https://bradleyjrichardson.github.io/portfolio-3/"
-        ></ProjectCards>
+        />
       </Rotate>
 
       <Rotate bottom right>
@@ -149,8 +149,8 @@ export default function Projects() {
           type="Personal Project"
           githublink="https://github.com/BradleyJrichardson/gatsby-portfolio"
           livelink=""
-        ></ProjectCards>
+        />
       </Rotate>
     </React.Fragment>
-  )
+  );
 }
