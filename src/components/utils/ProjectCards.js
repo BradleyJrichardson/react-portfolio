@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeConsumer } from "./theme";
 import Image from "./Image";
 import { FaGithubAlt, FaSignInAlt } from "react-icons/fa";
+import Tooltip from "./Tooltip";
 
 export default function ProjectCards({
   title,
@@ -31,10 +32,15 @@ export default function ProjectCards({
             </div>
             <div className="project-link-container">
               <a className="project-link" href={githublink}>
-                <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
+                <Tooltip text="Github">
+                  <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
+                </Tooltip>
               </a>
+
               <a className="project-link" href={livelink}>
-                <FaSignInAlt color="rgb(255, 215, 0)" size={25} />
+                <Tooltip text="Live Application">
+                  <FaSignInAlt color="rgb(255, 215, 0)" size={25} />
+                </Tooltip>
               </a>
             </div>
           </div>

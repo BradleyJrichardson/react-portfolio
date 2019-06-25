@@ -1,17 +1,16 @@
 import React from "react";
-import ProjectCards from "./ProjectCards";
-import Nasa from "../../images/nasa.png";
-import ISS from "../../images/ISS.png";
-import portfolio1 from "../../images/portfolio-1.png";
-import portfolio2 from "../../images/portfolio-2.png";
-import portfolio3 from "../../images/portfolio-3.png";
-import spaceX from "../../images/spaceX.png";
-import teach2learn from "../../images/teach2learn.png";
-import tictactoe from "../../images/tictactoe.png";
-import spaceClient from "../../images/space-client.png";
-import battle from "../../images/battle.png";
-import Mush from "../../images/mush.jpg";
-import Rotate from "react-reveal/Rotate";
+import ProjectCards from "../utils/ProjectCards";
+import Nasa from "../assets/images/nasa.png";
+import ISS from "../assets/images/ISS.png";
+import portfolio1 from "../assets/images/portfolio-1.png";
+import portfolio2 from "../assets/images/portfolio-2.png";
+import portfolio3 from "../assets/images/portfolio-3.png";
+import spaceX from "../assets/images/spaceX.png";
+import teach2learn from "../assets/images/teach2learn.png";
+import tictactoe from "../assets/images/tictactoe.png";
+import spaceClient from "../assets/images/space-client.png";
+import battle from "../assets/images/battle.png";
+import Mush from "../assets/images/mush.jpg";
 import Fade from "react-reveal/Fade";
 
 export default function Projects() {
@@ -21,7 +20,7 @@ export default function Projects() {
         <h2 className="projects-header">What I've Been Working on</h2>
       </Fade>
 
-      <Rotate bottom left>
+      <Fade>
         <ProjectCards
           title="MERN Mushrooms"
           about="Identify Edible mushrooms on your walk through a park, on the way home or simply used as a foraging aid in the forest! Aims to provide a simple identification process and is being built for myself to address a need."
@@ -32,8 +31,8 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/mern-mushrooms"
           livelink="#"
         />
-      </Rotate>
-      <Rotate bottom right>
+      </Fade>
+      <Fade>
         <ProjectCards
           title="Nasa POD Portal"
           about="Retrieve the Picture of the day from the Nasa API"
@@ -44,9 +43,9 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/nasa-API-client"
           livelink="https://distracted-goodall-8fb3e0.netlify.com/"
         />
-      </Rotate>
+      </Fade>
 
-      <Rotate bottom left>
+      <Fade>
         <ProjectCards
           title="Space API Client"
           about="A dashboard to view different space related API's. Built to solidify the concepts I learnt while building 'Github Battle'"
@@ -57,9 +56,9 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/react-hubble-api"
           livelink="#"
         />
-      </Rotate>
+      </Fade>
 
-      <Rotate bottom right>
+      <Fade>
         <ProjectCards
           title="Where's the ISS"
           about="View the current location of the International Space Station."
@@ -70,8 +69,8 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/spaceX-API-client"
           livelink="https://objective-darwin-0b23b4.netlify.com/"
         />
-      </Rotate>
-      <Rotate bottom left>
+      </Fade>
+      <Fade>
         <ProjectCards
           title="SpaceX API Client"
           about="View the lastest launch of SpaceX and lift off with them"
@@ -82,8 +81,8 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/spaceX-API-client"
           livelink="https://serene-golick-f43236.netlify.com/"
         />
-      </Rotate>
-      <Rotate bottom right>
+      </Fade>
+      <Fade>
         <ProjectCards
           title="Github Battle"
           about="Allows the user to view most popular repos by category or battle their friends"
@@ -94,8 +93,8 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/github-battle"
           livelink="https://pedantic-agnesi-274c5f.netlify.com/"
         />
-      </Rotate>
-      <Rotate bottom left>
+      </Fade>
+      <Fade>
         <ProjectCards
           title="Teach 2 Learn"
           about="Teach2Learn can be seen as a lesson board. Anyone that makes an account can advertise a lesson. A lesson that will be based on technologies the developer has just used."
@@ -107,8 +106,8 @@ export default function Projects() {
           githublink=""
           livelink=""
         />
-      </Rotate>
-      <Rotate bottom right>
+      </Fade>
+      <Fade>
         <ProjectCards
           title="Tic Tac Toe"
           about="Provides the user with the ability to play their friend in Tic Tac Toe. Alternatively if they dont have any friends they can verse a computer"
@@ -119,8 +118,8 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/tic-tac-toe"
           livelink="https://condescending-sinoussi-c7ba57.netlify.com/"
         />
-      </Rotate>
-      <Rotate bottom left>
+      </Fade>
+      <Fade>
         <ProjectCards
           title="Portfolio 1"
           about="My first attemped at a portfolio"
@@ -131,8 +130,8 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/First-Website"
           livelink="https://bradleyjrichardson.github.io/First-Website/"
         />
-      </Rotate>
-      <Rotate bottom right>
+      </Fade>
+      <Fade>
         <ProjectCards
           title="Portfolio 2"
           about="Second attempt and remained in place for 3 months"
@@ -143,8 +142,8 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/BradleyJrichardson.github.io"
           livelink="https://bradleyjrichardson.github.io/"
         />
-      </Rotate>
-      <Rotate bottom left>
+      </Fade>
+      <Fade>
         <ProjectCards
           title="Portfolio 3"
           about="Quickly made with Bulma, to refresh my look"
@@ -155,19 +154,19 @@ export default function Projects() {
           githublink="https://github.com/BradleyJrichardson/portfolio-3"
           livelink="https://bradleyjrichardson.github.io/portfolio-3/"
         />
-      </Rotate>
+      </Fade>
 
-      <Rotate bottom right>
+      <Fade>
         <ProjectCards
           title="Portfolio 4"
           about="What your currently viewing, built because I wanted to make it in Gatsby"
           lessons="Using React, Gatsby"
           technologies="React, Gatsby"
           type="Personal Project"
-          githublink="https://github.com/BradleyJrichardson/gatsby-portfolio"
-          livelink=""
+          githublink="https://github.com/BradleyJrichardson/react-portfolio"
+          livelink="https://bradrichardson.dev/#"
         />
-      </Rotate>
+      </Fade>
     </div>
   );
 }

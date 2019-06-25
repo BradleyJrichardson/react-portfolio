@@ -1,9 +1,9 @@
 import React from "react";
-import Nav from "./pages/components/Nav";
-import Landing from "./pages/components/Landing";
-import Projects from "./pages/components/Projects";
-import { ThemeProvider } from "./pages/components/theme";
-import "./global.css";
+import Nav from "./utils/Nav";
+import Landing from "./pages/Landing";
+import Projects from "./pages/Projects";
+import { ThemeProvider } from "./utils/theme";
+import "./app.css";
 import Particles from "react-particles-js";
 
 const particlesOptionsLight = {
