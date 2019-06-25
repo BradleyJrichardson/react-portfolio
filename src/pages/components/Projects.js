@@ -10,12 +10,29 @@ import teach2learn from "../../images/teach2learn.png";
 import tictactoe from "../../images/tictactoe.png";
 import spaceClient from "../../images/space-client.png";
 import battle from "../../images/battle.png";
+import Mush from "../../images/mush.jpg";
 import Rotate from "react-reveal/Rotate";
+import Fade from "react-reveal/Fade";
 
 export default function Projects() {
   return (
-    <React.Fragment>
-      <h2 className="projects-header">What I've Been Working on</h2>
+    <div className="card-container">
+      <Fade top>
+        <h2 className="projects-header">What I've Been Working on</h2>
+      </Fade>
+
+      <Rotate bottom left>
+        <ProjectCards
+          title="MERN Mushrooms"
+          about="Identify Edible mushrooms on your walk through a park, on the way home or simply used as a foraging aid in the forest! Aims to provide a simple identification process and is being built for myself to address a need."
+          technologies="React, MongoDB, Express, NodeJS"
+          lessons="Using MongoDB"
+          type="Personal Project"
+          img={Mush}
+          githublink="https://github.com/BradleyJrichardson/mern-mushrooms"
+          livelink="#"
+        />
+      </Rotate>
       <Rotate bottom right>
         <ProjectCards
           title="Nasa POD Portal"
@@ -151,6 +168,6 @@ export default function Projects() {
           livelink=""
         />
       </Rotate>
-    </React.Fragment>
+    </div>
   );
 }
