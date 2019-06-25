@@ -159,8 +159,8 @@ export default function Projects() {
       <Fade>
         <ProjectCards
           title="Portfolio 4"
-          about="What your currently viewing, built because I wanted to make it in Gatsby"
-          lessons="Using React, Gatsby"
+          about="What your currently viewing, built because I wanted to redo it in React"
+          lessons="Using React"
           technologies="React, Gatsby"
           type="Personal Project"
           githublink="https://github.com/BradleyJrichardson/react-portfolio"
